@@ -19,7 +19,7 @@ export const Board = () => {
       try {
         const body = { name, email, score };
         console.log(body);
-        await fetch(`http://localhost:3000/api/createParticipant`, {
+        await fetch(`http://localhost:3000/api/participants/create`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(body),
